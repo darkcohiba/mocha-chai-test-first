@@ -6,6 +6,14 @@ describe('Check for Ship', ()=>{
 
     // unit test
     it("Should correctly report no ship at a given players coordinate", function(){
+
+        player = {
+            ships: [
+                {
+                    locations : [[0,0]]
+                }
+            ]
+        }
         expect(checkForShip(player, [9, 9])).to.be.false
     });
 })
