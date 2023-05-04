@@ -1,4 +1,3 @@
-const count = require('../index.js')
 const expect = require('chai').expect
 
 // suite
