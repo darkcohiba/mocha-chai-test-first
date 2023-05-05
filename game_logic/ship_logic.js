@@ -5,13 +5,20 @@ function checkForShip( player, coordinates ) {
 
     for(let i = 0; i < player.ships.length; i++){
         ship = player.ships[i];
+
+        shipPresent= ship.locations.filter( (coord)=>{
+            return JSON.stringify(coord) === JSON.stringify(coordinates)
+        })[0]
         // console.log(ship.locations)
-        for (let x of ship.locations){
-            if (JSON.stringify(x) === JSON.stringify(coordinates)) {shipPresent = true}
-            else shipPresent = false
-        }
+        // for (let x of ship.locations){
+        //     if (JSON.stringify(x) === JSON.stringify(coordinates)) {shipPresent = true}
+        //     else shipPresent = false
+        // }
     }
-    return shipPresent;
+    if (!shipPresent){
+        return false;
+    }else return true;
+    ;
 }
 player1 = {
     ships: [
@@ -20,5 +27,5 @@ player1 = {
         }
     ]
 }
-// console.log(checkForShip(player1, [9,0]))
+// console.log(checkForShip(player1, [0,0]))
 module.exports.checkForShip = checkForShip
