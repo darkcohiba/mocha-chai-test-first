@@ -28,4 +28,18 @@ describe('Check for Ship', ()=>{
         }
         expect(checkForShip(player, [0, 0])).to.be.true
     });
+
+    it("Should handle ship at more than one coordinate", function(){
+
+        player = {
+            ships: [
+                {
+                    locations : [[0,0], [0, 1]]
+                }
+            ]
+        }
+        expect(checkForShip(player, [0, 0])).to.be.true
+        expect(checkForShip(player, [0, 1])).to.be.true
+        expect(checkForShip(player, [9, 9])).to.be.false
+    });
 })
