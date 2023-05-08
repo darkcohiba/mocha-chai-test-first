@@ -14,6 +14,11 @@ describe("Math Tests", ()=>{
         expect(math.divide(16, 8)).to.be.equal(2);
     })
 
+    it("'Subtract' function should return the first number minus the second number", ()=>{
+        expect(math.subtract(8, 8)).to.be.equal(0);
+        expect(math.subtract(16, 8)).to.be.equal(8);
+    })
+
 
 
 
