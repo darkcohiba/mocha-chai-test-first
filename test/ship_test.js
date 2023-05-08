@@ -59,5 +59,7 @@ describe('Check for Ship', ()=>{
         expect(checkForShip(player, [0, 0])).to.be.true
         expect(checkForShip(player, [0, 1])).to.be.true
         expect(checkForShip(player, [9, 9])).to.be.true
+        expect(checkForShip(player, [8, 9])).to.be.false
+
     });
 })
