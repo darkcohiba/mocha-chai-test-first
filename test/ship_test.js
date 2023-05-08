@@ -52,13 +52,15 @@ describe('Check for Ship', ()=>{
                     locations : [[0,0], [0, 1]]
                 },
                 {
-                    locations : [[9,9]]
+                    locations : [[9,9],[9,8] ]
                 }
             ]
         }
         expect(checkForShip(player, [0, 0])).to.be.true
         expect(checkForShip(player, [0, 1])).to.be.true
         expect(checkForShip(player, [9, 9])).to.be.true
+        expect(checkForShip(player, [9, 8])).to.be.true
+
         expect(checkForShip(player, [8, 9])).to.be.false
 
     });
