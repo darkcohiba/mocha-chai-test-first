@@ -8,6 +8,9 @@ const multiply = (num1, num2) => num1 * num2;
 
 const modulo = (num1, num2) => num1 % num2;
 
+const exponent = (num1, num2) => num1 ** num2;
 
-module.exports = { addition, divide, subtract, multiply, modulo };
+
+
+module.exports = { addition, divide, exponent, subtract, multiply, modulo };
 
