@@ -24,6 +24,11 @@ describe("Math Tests", ()=>{
         expect(math.multiply(2, 2)).to.be.equal(4);
     })
 
+    it("'Modulo' function should return the first number minus the second number", ()=>{
+        expect(math.modulo(8, 3)).to.be.equal(2);
+        expect(math.modulo(10, 4)).to.be.equal(2);
+    })
+
 
 
 

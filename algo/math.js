@@ -6,8 +6,8 @@ const subtract = (num1, num2) => num1 - num2;
 
 const multiply = (num1, num2) => num1 * num2;
 
-const module = (num1, num2) => num1 % num2;
+const modulo = (num1, num2) => num1 % num2;
 
 
-module.exports = { addition, divide, subtract, multiply, module };
+module.exports = { addition, divide, subtract, multiply, modulo };
 
