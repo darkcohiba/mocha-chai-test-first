@@ -5,6 +5,7 @@ describe("Math Tests", ()=>{
     it("'Addition' function should return two numbers summed", ()=>{
         expect(math.addition(8, 8)).to.be.equal(16);
         expect(math.addition(2, 8)).to.be.equal(10);
+        expect(math.addition(20, -12)).to.be.equal(8);
         expect(math.addition(2, "8")).to.be.equal("28");
     })
 
