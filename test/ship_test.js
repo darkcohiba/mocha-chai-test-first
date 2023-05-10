@@ -6,7 +6,6 @@ describe('Check for Ship', ()=>{
 
     // unit test
     it("Should correctly report no ship at a given players coordinate", function(){
-
         player = {
             ships: [
                 {
