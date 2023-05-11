@@ -11,6 +11,7 @@ describe("Math Tests", ()=>{
 
     it("'Divided' function should return two numbers divided", ()=>{
         expect(math.divide(8, 8)).to.be.equal(1);
+        expect(math.divide(8, 8)).to.be.equal(1);
         expect(math.divide(16, 8)).to.be.equal(2);
     })
 
