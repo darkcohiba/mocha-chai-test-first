@@ -1,4 +1,5 @@
 const expect = require('chai').expect
+// const should = require('chai').should()
 
 describe("Class Tests", ()=>{
     const math = require("../algo/class")
@@ -14,7 +15,7 @@ describe("Class Tests", ()=>{
         expect(math.square(3, 3, 3)).to.equal(2)
     })
 
-    it ('should return the sum of two numbers divided by the third number', ()=>{
+    it ('should/should return the sum of two numbers divided by the third number', ()=>{
         expect(math.square(3, 3, 3)).to.equal(2)
     })
 })
