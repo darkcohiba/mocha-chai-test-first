@@ -14,7 +14,6 @@ describe('Check for Ship', ()=>{
             ]
         }
         expect(checkForShip(player, [9, 9])).to.be.false
-        
     });
 
     it("Should correctly report a ship at a given players coordinate", function(){
